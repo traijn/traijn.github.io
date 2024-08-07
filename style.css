@@ -12,9 +12,9 @@ html {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #2b2b2b;
+    --color-bg: #585858;
     --color-text: #fff;
-    --color-btn-bg: #1E90FF;
+    --color-btn-bg: #478ed4;
     --color-btn-fg: #fff;
   }
 }

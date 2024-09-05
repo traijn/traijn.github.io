@@ -8,6 +8,7 @@ html {
   --color-text: #000;
   --color-btn-bg: #1E90FF;
   --color-btn-fg: #fff;
+  --color-btn-bg-hover: #1871cc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +17,7 @@ html {
     --color-text: #fff;
     --color-btn-bg: #478ed4;
     --color-btn-fg: #fff;
+    --color-btn-bg-hover: #3a72ad;
   }
 }
 

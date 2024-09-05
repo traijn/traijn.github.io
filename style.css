@@ -52,3 +52,7 @@ button {
   cursor: pointer;
   border-radius: 100px;
 }
+
+button:hover {
+  background-color: var(--color-btn-bg-hover);
+}

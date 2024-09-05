@@ -8,7 +8,6 @@ html {
   --color-text: #000;
   --color-btn-bg: #1E90FF;
   --color-btn-fg: #fff;
-  --color-btn-bg-hover: #1871cc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +15,6 @@ html {
     --color-bg: #585858;
     --color-text: #fff;
     --color-btn-bg: #478ed4;
-    --color-btn-bg-hover: #3a72ad;
     --color-btn-fg: #fff;
   }
 }
@@ -55,5 +53,11 @@ button {
 }
 
 button:hover {
-  background-color: var(--color-btn-bg-hover);
+  background-color: #156bb2;
+}
+
+@media (prefers-color-scheme: dark) {
+  button:hover {
+    background-color: #3a72ad;
+  }
 }

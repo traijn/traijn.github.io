@@ -24,7 +24,7 @@ body {
   color: var(--color-text);
   font-family: Arial, sans-serif;
   display: flex;
-  min-height: 100vh;
+  align-items: left;
   flex-direction: column;
   -ms-overflow-style: none;
   scrollbar-width: none;

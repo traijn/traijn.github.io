@@ -4,30 +4,36 @@ html {
 }
 
 :root {
-  --color-bg: #fff;
-  --color-text: #000;
-  --color-btn-bg: #1E90FF;
-  --color-btn-fg: #fff;
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-btn-bg: #000000;
+  --color-btn-fg: #ffffff;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --font-family: 'Consolas', Monaco;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #585858;
-    --color-text: #fff;
-    --color-btn-bg: #478ed4;
-    --color-btn-fg: #fff;
+    --color-bg: #000000;
+    --color-text: #ffffff;
+    --color-btn-bg: #ffffff;
+    --color-btn-fg: #000000;
   }
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: Arial, sans-serif;
+  font-family: var(--font-family);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
+  margin: 0;
+  padding: 20px;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -40,24 +46,34 @@ a {
   width: 100%;
   text-align: center;
   margin: 10px 0;
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--color-btn-bg);
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: var(--color-btn-bg);
   color: var(--color-btn-fg);
   border: none;
   cursor: pointer;
-  border-radius: 100px;
-  transition: background-color 0.3s ease;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: background-color var(--transition), transform var(--transition);
+  font-family: var(--font-family)
 }
 
 button:hover {
   background-color: #156bb2;
+  transform: translateY(-2px);
 }
 
 @media (prefers-color-scheme: dark) {
   button:hover {
-    background-color: #3a72ad;
+    background-color: #979797;
   }
 }
